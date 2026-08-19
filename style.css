@@ -1,0 +1,809 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.outline *{
+    border: 1px solid black;
+}
+
+/* Font */
+
+/* Geist Fonts */
+.geist-400{
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.geist-500{
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.geist-600{
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.geist-700{
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Roboto-Fonts */
+.roboto-300{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-400{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-700{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/* Hero Wrapper */
+
+
+/* Hero section setup */
+.hero-wrapper {
+  min-height: 614px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Background images styling */
+.hero-bg-img {
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 300ms ease-out; /* Figma: animation dissolve 300ms ease out */
+  opacity: 0;
+}
+
+/* Active class opacity control */
+.hero-bg-img.active {
+  opacity: 1;
+}
+
+/* Overlay layer */
+.hero-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Content Layer - Always stays above both images */
+.hero-content {
+  z-index: 10;
+}
+
+/*----------------- Main Navbar ---------------*/
+
+/* Base Link Styling */
+.main-navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    color: #4B5563;
+    position: relative;
+    padding-bottom: 6px !important;
+    transition: color 0.3s ease;
+}
+
+/* Animated Red Underline Effect */
+.main-navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(239, 59, 35, 1);
+    transition: width 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+/* Hover & Active States */
+.main-navbar .navbar-nav .nav-item .nav-link:hover,
+.main-navbar .navbar-nav .nav-item .nav-link.active {
+    color: rgba(239, 59, 35, 1) !important;
+}
+
+.main-navbar .navbar-nav .nav-item .nav-link:hover::after,
+.main-navbar .navbar-nav .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+/* CTA Button Styling */
+.main-navbar-button {
+    background-color: rgba(239, 59, 35, 1);
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.main-navbar-button:hover,
+.main-navbar-button:focus {
+    background-color: rgba(215, 45, 23, 1);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(239, 59, 35, 0.3);
+}
+
+/*----------------- Main Navbar End ---------------*/
+
+/* ------------------Home Page Hero Content---------------- */
+ /* Badge Styling */
+ .hero-badge {
+     background-color: rgba(255, 255, 255, 0.6);
+     border: 1px solid rgba(242, 242, 242, 1);
+     border-radius: 50px;
+     /* backdrop-filter: blur(8px); */
+     color: rgba(92, 64, 59, 1);
+     font-size: 14px;
+ }
+ 
+ .badge-icon {
+     font-size: 12px;
+     color: #EF3B23;
+ }
+ 
+ /* Heading Styling */
+.hero-title {
+    color: #111827;
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem); /* Responsive typography */
+    line-height: 1.15;
+    letter-spacing: -0.96px;
+}
+ 
+ /* Highlight Text (Scale) */
+.hero-title .highlight-text {
+    color: #EF3B23; /* Same accent color as button */
+}
+ 
+ /* Paragraph Styling */
+.hero-description {
+    color: rgba(94, 94, 96, 1);
+    font-size: 16px;
+    line-height: 34px;
+}
+ 
+ /* Primary Button (Solid Orange) */
+
+ /* Base Navbar Button Style (Shared Shape & Styling) */
+.cta-btn-1 {
+    background-color: #ef3b23;
+    color: #ffffff !important;
+    border: 1px solid #ef3b23;
+    border-radius: 50px;
+    min-width: 145px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease-in-out;
+}
+
+.cta-btn-1:hover {
+    background-color: #d72d17;
+    border-color: #d72d17;
+    color: #ffffff !important;
+    box-shadow: 0px 6px 15px rgba(239, 59, 35, 0.25);
+}
+
+/* Secondary Outline Variation for View Documentation */
+.cta-btn-2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #181c1f !important;
+    border: 1px solid #4c4c4e;
+    border-radius: 50px;
+    min-width: 145px;
+    transition: all 0.25s ease-in-out;
+  
+}
+
+.cta-btn-2:hover {
+    background-color: #181c1f;
+    border-color: #181c1f;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 12px rgba(24, 28, 31, 0.15);
+}
+
+
+
+
+/* ------------------Hero Content End---------------- */
+
+
+/* ------------------Bento Grid Feature Section---------------- */
+/* Section Background */
+.bento-grid-feature-section {
+    background-color: rgba(240, 244, 248, 1);
+}
+
+/* Bento Card Styling */
+.bento-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bento-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography */
+.bento-title {
+    font-size: 20px;
+    color: #111827;
+}
+
+.bento-title-2 {
+    font-size: 24px;
+    color: #111827;
+}
+
+.bento-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #4B5563;
+}
+
+/* Icon Container (Google Material Symbols) */
+.bento-icon-box {
+    width: 42px;
+    height: 42px;
+    background-color: #F3F4F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bento-icon-box .material-symbols-outlined {
+    font-size: 22px;
+    color: #4A3E3D;
+}
+
+/* CFS Workflows Tag Items */
+.cfs-tag-item {
+    background-color: #F9FAFB;
+    border: 1px solid #F3F4F6;
+    font-size: 0.9rem;
+    color: #374151;
+    transition: background-color 0.2s ease;
+}
+
+.cfs-tag-item:hover {
+    background-color: #F3F4F6;
+}
+
+.tag-arrow {
+    color: #EF3B23;
+    font-weight: bold;
+}
+
+/* Interactive Link with Underline Hover & Aligned Arrow */
+.bento-link {
+    font-size: 0.95rem;
+    color: #EF3B23 !important;
+    transition: color 0.2s ease;
+}
+
+/* Text decoration on text span only */
+.bento-link span:first-child {
+    text-decoration: none;
+}
+
+.bento-link:hover span:first-child {
+    text-decoration: underline;
+}
+
+/* Material Icon alignment and subtle slide animation */
+.bento-link .material-symbols-outlined {
+    font-size: 1.1rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.bento-link:hover .material-symbols-outlined {
+    transform: translateX(3px);
+}
+/* ------------------Bento Grid Feature End---------------- */
+
+/* ---Consultation Section---- */
+
+.consultation-section{
+    background-color: rgba(240, 244, 248, 1);
+}
+
+.consultation-card {
+    background-image: url('images/home-hero-section-image-1.png'); /* Apni image ka path lagayein */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px !important;
+}
+
+.consultation-overlay {
+    background-color: rgba(17, 24, 39, 0.9);
+    z-index: 1;
+}
+
+/* Typography & Sizing */
+.consultation-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    letter-spacing: -0.02em;
+}
+
+.consultation-desc {
+    font-size: 1.05rem;
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+/* Primary Button Sync (Exact navbar button style reuse) */
+.consultation-content .main-navbar-button {
+    background-color: #EF3B23;
+    color: #FFFFFF !important;
+    border-radius: 12px; /* Screenshot ke sharp rounded corners ke mutabiq */
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.consultation-content .main-navbar-button:hover {
+    background-color: #D72D17;
+    box-shadow: 0 6px 20px rgba(239, 59, 35, 0.4);
+}
+
+
+.schedule-a-consultation-btn {
+    background-color: rgba(239, 59, 35, 1);
+    color: #ffffff !important;
+    border-radius: 10px;
+    border: 1px solid rgba(239, 59, 35, 1);
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.03);
+}
+  
+.schedule-a-consultation-btn:hover {
+    background-color: rgba(215, 45, 23, 1);
+    border-color: rgba(215, 45, 23, 1);
+    color: #ffffff !important;
+    /* box-shadow: 0 4px 12px rgba(239, 59, 35, 0.3); */
+}
+
+/* ---Statistic Row---- */
+.statistic-row-section{
+    background-color: rgba(240, 244, 248, 1);
+}
+
+/* Card Box Styling */
+.stat-card {
+    background-color: rgba(245, 248, 251, 0.5); /* Subtle light blueish background */
+    border: 1px solid rgba(223, 227, 231, 1);
+    transition: all 0.3s ease;
+}
+
+
+/* Number / Main Title Styling */
+.stat-number {
+    color: #EF3B23; /* Same red accent color */
+    font-size: 1.75rem;
+    letter-spacing: -0.01em;
+}
+
+/* Subtitle Label Styling */
+.stat-label {
+    color: #64748B;
+    font-size: 0.725rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* Base Footer Dark Background */
+.main-footer {
+    background-color: #31353B;
+    padding-top: 4rem;
+}
+
+.footer-map-location{
+    font-size: 14px;
+}
+
+
+.footer-mail{
+    font-size: 14px;
+}
+
+.follow-us-social-media{
+    font-size: 16px;
+    color: white;
+}
+
+/* Top Red Angled Shape Effect */
+.footer-angled-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #EF3B23;
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 100%);
+    z-index: 1;
+}
+
+/* Link Hover State */
+.footer-links a {
+    transition: opacity 0.2s ease;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    opacity: 1 !important;
+}
+
+/* Social Media Circles */
+.social-btn {
+    width: 32px;
+    height: 32px;
+    /* transition: transform 0.2s ease, opacity 0.2s ease; */
+}
+
+.social-btn:hover {
+    /* transform: translateY(-2px); */
+    opacity: 0.9;
+}
+
+/* Footer-2 Container Styling */
+.footer-2 {
+    background-color: #31353B; /* Main footer se matching dark background */
+}
+
+/* Links Hover Animation */
+.footer-bottom-links .footer-link {
+    transition: opacity 0.2s ease, color 0.2s ease;
+    font-size: 0.85rem;
+}
+
+/* .footer-bottom-links .footer-link:hover {
+    opacity: 1 !important;
+    color: #FFFFFF !important;
+} */
+
+/* Mobile responsive font sizing */
+@media (max-width: 576px) {
+    .copyright-text, .footer-link {
+        font-size: 0.775rem;
+    }
+}
+/* -------------------------------------Home Page Ends ----------------------------------*/
+
+/* -------------------------------------Feature Page ----------------------------------*/
+
+/* Main Section Wrapper */
+.features-page .main-section {
+    background-color: rgba(240, 244, 248, 1);
+}
+
+/* ----------Feature-Hero-Section--------------- */
+
+/* Hero Content Wrapper */
+.features-page .feature-hero-section .hero-content {
+    max-width: 570px;
+}
+
+/* Label / Subtitle */
+.features-page .feature-hero-section .hero-label {
+    color: #f0442f;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+
+/* Heading */
+.features-page .feature-hero-section .hero-title {
+    color: #202020;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    font-size: clamp(2.5rem, 2.2143rem + 1.4286vw, 3.5rem);
+}
+
+/* Paragraph Description */
+.features-page .feature-hero-section .hero-description {
+    color: #686868;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 560px;
+}
+
+.features-page .feature-hero-section .hero-cta-buttons .cta-btn-1{
+    background-color: #ef3b23;
+    color: #ffffff !important;
+    border: 1px solid #ef3b23;
+    border-radius: 50px;
+    min-width: 145px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease-in-out;
+    font-size: 12px;
+}
+.features-page .feature-hero-section .hero-cta-buttons .cta-btn-1:hover{
+    background-color: #d72d17;
+    border-color: #d72d17;
+    color: #ffffff !important;
+    box-shadow: 0px 6px 15px rgba(239, 59, 35, 0.25);
+}
+
+
+.features-page .feature-hero-section .hero-cta-buttons .cta-btn-2 {
+    color: #181c1f !important;
+    border: 1px solid #4c4c4e;
+    border-radius: 50px;
+    min-width: 145px;
+    transition: all 0.25s ease-in-out;
+    font-size: 12px;
+    background-color: transparent !important;
+  
+}
+
+.features-page .feature-hero-section .hero-cta-buttons .cta-btn-2:hover {
+    background-color: #181c1f !important;
+    border-color: #181c1f;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 12px rgba(24, 28, 31, 0.15);
+}
+
+
+/* Hero Image Wrapper */
+.features-page .feature-hero-section .hero-image-wrapper {
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.features-page .feature-hero-section .hero-main-img {
+    border-radius: 28px;
+    display: block;
+}
+
+/* =========================================
+   YARD SECTION STYLES
+========================================= */
+
+/* Label & Typography */
+.features-page .yard-section .yard-label {
+    color: #cb3223;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.features-page .yard-section .yard-title {
+    color: #181c1f;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.features-page .yard-section .yard-description {
+    max-width: 560px;
+    color: #696969;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* Feature Cards */
+.features-page .yard-section .yard-feature-card {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+}
+
+.features-page .yard-section .yard-feature-card h5 {
+    color: #202020;
+    line-height: 1.3;
+}
+
+.features-page .yard-section .yard-feature-card p {
+    color: #737373;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.features-page .yard-section .feature-icon {
+    color: #cb3223;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* Image Wrapper Layout */
+.features-page .yard-section .yard-image-wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.features-page .yard-section .yard-main-image {
+    display: block;
+    border-radius: 20px;
+}
+
+/* Top-Right Floating Utilization Card */
+.features-page .yard-section .yard-stat-card {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 2;
+    min-width: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.features-page .yard-section .yard-stat-title {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+.features-page .yard-section .yard-utilization-icon {
+    color: #cb3223;
+    font-size: 18px;
+    font-variation-settings: 'FILL' 1, 'wght' 600;
+}
+
+.features-page .yard-section .yard-stat-card h3 {
+    color: #202020;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.features-page .yard-section .yard-stat-status {
+    color: #cb3223;
+    font-size: 11px;
+}
+
+.features-page .yard-section .yard-progress {
+    height: 6px;
+    background: #e9ecef;
+    border-radius: 50px;
+}
+
+.features-page .yard-section .yard-progress .progress-bar {
+    background: #cb3223;
+    border-radius: 50px;
+}
+
+/* =========================================
+   FEATURE PAGE - EXCLUSIVE STATISTIC ROW
+========================================= */
+
+/* Parent Wrapper Scope */
+.features-page .statistic-row-section {
+    background-color: rgba(240, 244, 248, 1);
+}
+
+/* Scoped Stat Card */
+.features-page .statistic-row-section .stat-card {
+    background-color: rgba(245, 248, 251, 0.5);
+    border: 1px solid rgba(223, 227, 231, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Scoped Number / Main Title */
+.features-page .statistic-row-section .stat-number {
+    color: #EF3B23;
+    font-size: 1.75rem;
+    letter-spacing: -0.01em;
+}
+
+/* Scoped Subtitle Label */
+.features-page .statistic-row-section .stat-label {
+    color: #64748B;
+    font-size: 0.725rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Bottom-Right Floating Efficiency Card */
+.features-page .yard-section .efficiency-card {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 2;
+    min-width: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.features-page .yard-section .efficiency-label {
+    color: #777;
+    font-size: 9px;
+    letter-spacing: 0.3px;
+}
+
+.features-page .yard-section .efficiency-arrow {
+    color: #20b15a;
+    font-size: 14px;
+}
+
+.features-page .yard-section .efficiency-check {
+    color: #20b15a;
+    font-size: 22px;
+}
+
+.features-page .yard-section .efficiency-card h5 {
+    font-size: 15px;
+    color: #202020;
+}
+
+.features-page .yard-section .efficiency-card p {
+    color: #777;
+    font-size: 10px;
+    white-space: nowrap;
+}
+/* =========================================
+   ENTERPRISE SECTION STYLES
+========================================= */
+
+.features-page .enterprise-section {
+    background-color: rgba(240, 244, 248, 1);
+}
+
+/* Main Image Styling */
+.features-page .enterprise-section .enterprise-main-img {
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* Typography */
+.features-page .enterprise-section .enterprise-title {
+    color: rgba(24, 28, 31, 1);
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.features-page .enterprise-section .enterprise-description {
+    color: #696969;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 580px;
+}
+
+/* Feature Cards (Matching Design Mockup) */
+.features-page .enterprise-section .enterprise-feature-card {
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Icons & Labels */
+.features-page .enterprise-section .enterprise-feature-icon {
+    color: #f0442f;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.features-page .enterprise-section .enterprise-feature-text {
+    color: rgba(94, 94, 96, 1);
+    font-size: 13px;
+    line-height: 1.3;
+}
