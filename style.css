@@ -734,13 +734,13 @@ html {
 
 .features-page .yard-section .efficiency-label {
     color: #777;
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0.3px;
 }
 
 .features-page .yard-section .efficiency-arrow {
     color: #20b15a;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .features-page .yard-section .efficiency-check {
@@ -749,13 +749,13 @@ html {
 }
 
 .features-page .yard-section .efficiency-card h5 {
-    font-size: 15px;
+    font-size: 20px;
     color: #202020;
 }
 
 .features-page .yard-section .efficiency-card p {
     color: #777;
-    font-size: 10px;
+    font-size: 12px;
     white-space: nowrap;
 }
 /* =========================================
