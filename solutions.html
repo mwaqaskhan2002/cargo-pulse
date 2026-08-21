@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feature Solutions - Cargo Pulse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display&family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Noto+Sans+Mono:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Syncopate:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Material Symbols Outlined CDN -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/cargo-pulse-favicon.png" type="image/x-icon">
+</head>
+
+<body class="solutions-page">
+    <nav class="main-navbar navbar navbar-expand-lg w-100 " style="background-color: rbga(246, 250, 254);">
+        <div class="container-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="images/cargo-pulse-logo-removebg-preview.png" alt="Logo"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Offcanvas Toggler Button (Mobile Only) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Offcanvas Container -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Offcanvas Header (Mobile Only) -->
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="images/cargo-pulse-logo-removebg-preview.png" alt="Logo" height="30">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <!-- Offcanvas Body (Mobile Column, Desktop Horizontal Row) -->
+                <div
+                    class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+
+                    <!-- Navigation Links Container -->
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 d-flex gap-4 geist-400 custom-nav-spacing">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" >About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="solutions.html" aria-current="page">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Action Button Container -->
+                    <div class="mt-auto mt-lg-0 text-center text-lg-end">
+                        <a href="contact.html"
+                            class="main-navbar-button px-4 py-2 text-decoration-none d-inline-block geist-500">
+                            Request a Demo
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-section">
+    
+        <section class="solutions-hero py-4 py-lg-5">
+    
+            <div class="container">
+    
+                <div class="row align-items-center gy-4 gy-lg-0">
+                    <div class="col-12 col-lg-6">
+    
+                        <p class="solutions-hero-label geist-500 mb-3">
+                            CARGO PULSE SOLUTIONS
+                        </p>
+    
+                        <h1 class="solutions-hero-title geist-700 mb-4">
+                            One Platform.
+                            <br>
+                            <span>
+                                Multiple Terminal
+                                <br>
+                                Operations.
+                            </span>
+    
+                        </h1>
+    
+                        <p class="solutions-hero-description geist-400 mb-4">
+                            Cargo Pulse brings together the operational capabilities required to manage
+                            containerized and CFS cargo, terminal gates, yards, vessels, billing, customs
+                            integration and business reporting in a single, high-performance environment.
+                        </p>
+    
+                        <div class="hero-cta-buttons d-flex flex-column flex-sm-row  gap-3">
+                            <!-- Primary CTA Button -->
+                            <a href="#"
+                                class="solutions-primary-btn px-4 py-2 text-decoration-none d-inline-flex align-items-center justify-content-center geist-500">
+                                Request Demo
+                                <span class="material-symbols-outlined btn-arrow-icon ms-2">
+                                    arrow_forward
+                                </span>
+                            </a>
+                        
+                            <!-- Secondary Outline CTA Button -->
+                            <a href="#"
+                                class="solutions-secondary-btn px-4 py-2 text-decoration-none d-inline-flex align-items-center justify-content-center geist-500">
+                                Explore Platform
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-12 col-lg-6">
+    
+                        <div class="text-center text-lg-end">
+    
+                            <img src="images/solutions-hero-section-image.png" alt="Cargo Pulse Terminal Solutions"
+                                class="img-fluid w-100 solutions-hero-image">
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+        <section class="solutions-overview py-4 py-lg-5" id="solutions">
+            <div class="container">
+    
+                <!-- Heading -->
+                <div class="text-center mb-4 mb-lg-5">
+                    <h2 class="solutions-overview-title geist-600 mb-2">
+                        Solutions Overview
+                    </h2>
+    
+                    <p class="solutions-overview-description geist-400 mb-0">
+                        A comprehensive suite designed for modern terminal efficiency.
+                    </p>
+                </div>
+    
+    
+                <!-- Cards -->
+                <div class="row g-4">
+    
+                    <!-- 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    inventory_2
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Container Yard<br>
+                                Operations
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Optimize yard space, assign positions intelligently,
+                                and track inventory with precision.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    warehouse
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                CFS Operations
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Manage stripping, stuffing, and LCL/FCL cargo flows
+                                with configurable operational stages.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    sensor_door
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Gate Management
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Automate entry/exit protocols, integrate with customs,
+                                and speed up truck turnaround times.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    directions_boat
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Vessel Operations
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Streamline loading, discharging, and stowage planning
+                                for arriving and departing vessels.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 5 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    request_quote
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Terminal Billing
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Automated tariff calculation, invoice generation,
+                                and integrated online payment gateways.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 6 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    share_location
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Customs Integration
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Native EDI connectivity directly with customs
+                                authorities, eliminating third-party middleware.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 7 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    admin_panel_settings
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                System Administration
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Granular role-based access control, system auditing,
+                                and secure master data management.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <!-- 8 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="solution-card border rounded-4 p-3 h-100">
+    
+                            <div
+                                class="solution-icon-box d-inline-flex align-items-center justify-content-center rounded-3">
+                                <span class="material-symbols-outlined solution-icon">
+                                    bar_chart
+                                </span>
+                            </div>
+    
+                            <h5 class="solution-card-title geist-600 mt-3 mb-2">
+                                Business Reporting
+                            </h5>
+    
+                            <p class="solution-card-description geist-400 mb-0">
+                                Over 50+ pre-configured reports, live executive
+                                dashboards, and comprehensive KPI tracking.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <section class="solution-cta py-5 container-fluid">
+            <div class="container">
+    
+                <div class="solution-cta-box text-center rounded-4 px-3 py-5 mt-5">
+    
+                    <h2 class="solution-cta-title geist-600 mb-2">
+                        Find the Right Solution for Your Terminal.
+                    </h2>
+    
+                    <p class="solution-cta-description geist-400 mx-auto mb-4">
+                        Discover how Cargo Pulse can transform your terminal operations with a personalized
+                        walkthrough of our unified platform.
+                    </p>
+    
+                    <div class="hero-cta-buttons d-flex flex-column justify-content-center flex-sm-row  gap-3">
+                        <!-- Primary CTA Button -->
+                        <a href="#"
+                            class="solutions-primary-btn px-4 py-2 text-decoration-none d-inline-flex align-items-center justify-content-center geist-500">
+                            Request Demo
+                        </a>
+                    
+                        <!-- Secondary Outline CTA Button -->
+                        <a href="#"
+                            class="solutions-secondary-btn px-4 py-2 text-decoration-none d-inline-flex align-items-center justify-content-center geist-500">
+                            Explore Platform
+                        </a>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="main-footer position-relative text-white overflow-hidden">
+
+        <div class="footer-angled-shape"></div>
+
+        <div class="container position-relative z-2 py-5">
+            <div class="row gy-4 gx-lg-5">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-inline-block mt-5">
+                        <img src="images/cargo-pulse-logo.png" alt="Cargo Pulse" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 fs-6 roboto-700">Contact Us</h5>
+
+                    <div class="footer-map-location d-flex align-items-start gap-2 mb-3 text-light opacity-75">
+                        <span class="material-symbols-outlined fs-5 flex-shrink-0 mt-1">location_on</span>
+                        <span class="small roboto-400">Wisconsin Ave, Suite 700<br>Chevy Chase, Maryland
+                            20815</span>
+                    </div>
+
+                    <div class="footer-mail d-flex align-items-center gap-2 text-light opacity-75">
+                        <span class="material-symbols-outlined flex-shrink-0">mail</span>
+                        <a href="mailto:support@figma.com"
+                            class="text-light roboto-400 text-decoration-none small">support@figma.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <ul class="list-unstyled footer-links mb-0 small d-flex flex-column gap-2">
+                        <li><a href="about.html" class="text-light text-decoration-none opacity-75 roboto-400">About</a></li>
+                        <li><a href="features.html"
+                                class="text-light text-decoration-none opacity-75 roboto-400">Features</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Pricing</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Gallery</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 roboto-700">Subscribe</h5>
+
+                    <form class="mb-4">
+                        <div class="mb-2">
+                            <input type="email" class="form-control bg-white border-0 py-2"
+                                style="color: rgba(154, 158, 165, 1)" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 py-2 roboto-400 border-0"
+                            style="background-color: #EF3B23;">
+                            Subscribe
+                        </button>
+                    </form>
+
+                    <h6 class="follow-us-social-media mb-2 small opacity-75 roboto-700">Follow us</h6>
+                    <div class="d-flex gap-2 social-icons">
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-send-plane-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-figma-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-2 container-fluid py-3 border-top border-secondary border-opacity-25">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+                <div class="copyright-text text-light opacity-75 small roboto-300">
+                    © 2026 All Rights Reserved | Powered by Digitech Infra
+                </div>
+
+                <div
+                    class="footer-bottom-links d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 roboto-400">
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Privacy
+                        Policy</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Terms of
+                        Use</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Sales and
+                        Refunds</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Legal</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Site Map</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--

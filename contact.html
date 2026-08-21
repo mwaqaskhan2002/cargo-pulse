@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - Cargo Pulse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display&family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Noto+Sans+Mono:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Syncopate:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Material Symbols Outlined CDN -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="images/cargo-pulse-favicon.png" type="image/x-icon">
+
+</head>
+
+<body class="contact-page">
+    <nav class="main-navbar navbar bg-transparent navbar-expand-lg w-100 ">
+        <div class="container-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="images/cargo-pulse-logo-removebg-preview.png" alt="Logo"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Offcanvas Toggler Button (Mobile Only) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Offcanvas Container -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Offcanvas Header (Mobile Only) -->
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="images/cargo-pulse-logo-removebg-preview.png" alt="Logo" height="30">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <!-- Offcanvas Body (Mobile Column, Desktop Horizontal Row) -->
+                <div
+                    class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+
+                    <!-- Navigation Links Container -->
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 d-flex gap-4 geist-400 custom-nav-spacing">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solutions.html">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Action Button Container -->
+                    <div class="mt-auto mt-lg-0 text-center text-lg-end">
+                        <a href="contact.html" class="main-navbar-button px-4 py-2 text-decoration-none d-inline-block geist-500">
+                            Request a Demo
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="">
+        <section class="contact-section container-fluid py-5">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+        
+                    <!-- LEFT COLUMN: CONTACT INFO & OFFICES -->
+                    <aside class="info-and-location col-lg-5 col-12 px-0">
+                        <h1 class="title geist-700">Get in touch</h1>
+                        <p class="subtitle geist-400">Ready to optimize your terminal operations? Our experts are
+                        here to help you navigate massive scale with precision.</p>
+
+                        <!-- Email Us Card -->
+                        <div class="contact-info-card d-flex align-items-start gap-3">
+                            <!-- Circle Icon Wrapper -->
+                            <div class="info-icon-wrapper d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                        
+                            <!-- Details -->
+                            <div class="info-content">
+                                <h5 class="info-title geist-600 mb-1">Email Us</h5>
+                                <div class="info-emails geist-400">
+                                    <p class="mb-0">support@cargopulse.com</p>
+                                    <p class="mb-0">sales@cargopulse.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Call Us Card -->
+                        <div class="contact-info-card d-flex align-items-start gap-3 mb-5">
+                            <!-- Circle Icon Wrapper -->
+                            <div class="info-icon-wrapper d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="ri-phone-fill"></i>
+                            </div>
+                        
+                            <!-- Details -->
+                            <div class="info-content">
+                                <h5 class="info-title geist-600 mb-1">Call Us</h5>
+                                <div class="info-call geist-400">
+                                    <p class="mb-0">+1 (800) 555-0199</p>
+                                    <p class="mb-0">Mon-Fri from 8am to 5pm (EST)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="global-offices-wrapper py-4">
+                            <h6 class="global-offices-title geist-700 mb-3">Global Offices</h6>
+                        
+                            <div class="row g-4">
+                                <!-- New York Office -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="office-item">
+                                        <div class="d-flex align-items-center gap-1 mb-1">
+                                            <i class="ri-map-pin-line office-icon"></i>
+                                            <h6 class="office-city geist-600 mb-0">New York</h6>
+                                        </div>
+                                        <address class="office-address geist-400 fst-normal mb-0">
+                                            120 Broadway, Suite 3400<br>
+                                            New York, NY 10271
+                                        </address>
+                                    </div>
+                                </div>
+                        
+                                <!-- Rotterdam Office -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="office-item">
+                                        <div class="d-flex align-items-center gap-1 mb-1">
+                                            <i class="ri-map-pin-line office-icon"></i>
+                                            <h6 class="office-city geist-600 mb-0">Rotterdam</h6>
+                                        </div>
+                                        <address class="office-address geist-400 fst-normal mb-0">
+                                            Wilhelminakade 1<br>
+                                            3072 AP Rotterdam
+                                        </address>
+                                    </div>
+                                </div>
+                        
+                                <!-- Singapore Office -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="office-item">
+                                        <div class="d-flex align-items-center gap-1 mb-1">
+                                            <i class="ri-map-pin-line office-icon"></i>
+                                            <h6 class="office-city geist-600 mb-0">Singapore</h6>
+                                        </div>
+                                        <address class="office-address geist-400 fst-normal mb-0">
+                                            Marina Bay Financial Centre<br>
+                                            Tower 3, Singapore 018982
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </aside>
+        
+                    <!-- RIGHT COLUMN: CONTACT FORM -->
+                    <div class="col-lg-7 col-12">
+                        <div class="contact-form py-sm-2 px-sm-5 p-3">
+                            <div class="py-3">
+                                <h1 class="title geist-600 text-lg-start text-center">Request a Demo</h1>
+                                <p class="subtitle geist-400 text-lg-start text-center">Fill out the form below and our sales team will contact you shortly.</p>
+                            </div>
+                            <form action="">
+                                <div class="row mb-4 gy-3 gy-lg-0">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="contactFirstName" class="form-label custom-form-label geist-500">FIRST NAME</label>
+                                        <input id="contactFirstName" type="text" class="form-control custom-form-input geist-400" placeholder="Jane" required>
+                                    </div>
+                                    <div for="contactLastName" class="col-lg-6 col-12">
+                                        <label class="form-label custom-form-label geist-500">LAST NAME</label>
+                                        <input id="contactLastName" type="text" class="form-control custom-form-input geist-400" placeholder="Doe" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <label for="contactEmail" class="form-label custom-form-label geist-500">WORK EMAIL</label>
+                                    <input id="contactEmail" type="email" class="form-control custom-form-input geist-400" placeholder="jane@company.com" required>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <label for="contactCompanyName" class="form-label custom-form-label geist-500">COMPANY NAME</label>
+                                    <input id="contactCompanyName" type="text" class="form-control custom-form-input geist-400" placeholder="Global Logistics Corp" required>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <label class="form-label custom-form-label geist-600">AREA OF INTEREST</label>
+                                    <div class="dropdown custom-dropdown">
+                                        <button class="btn custom-form-select geist-400 w-100 text-start d-flex align-items-center justify-content-between"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="selected-text geist-400">Select an option</span>
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 p-1 rounded-3 shadow-sm">
+                                            <li><a class="dropdown-item geist-400" href="#">Global Logistics Corp</a></li>
+                                            <li><a class="dropdown-item geist-400" href="#">Cargo Pulse TOS</a></li>
+                                            <li><a class="dropdown-item geist-400" href="#">Terminal Operations Ltd</a></li>
+                                            <li><a class="dropdown-item geist-400" href="#">Other</a></li>
+                                        </ul>                              
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <label for="contactMessage" class="form-label custom-form-label geist-500">MESSAGE (OPTIONAL)</label>
+                                    <textarea class="form-control custom-form-textarea geist-400" id="contactMessage" rows="4"
+                                        placeholder="Tell us about your requirements..."></textarea>                          
+                                </div>
+
+                                <div class="col-12 mb-4 d-flex justify-content-start">
+                                    <div class="captcha-responsive-wrapper">
+                                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                                    </div>                          
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <button type="submit" class="btn custom-submit-btn py-2 geist-600 w-100">
+                                        Submit Request
+                                    </button>                          
+                                </div>
+
+                                <div class="privacy-policy-agreement col-12 mb-5 text-center">
+                                    <p class="geist-500">By submitting this form, you agree to our <span>Privacy Policy.</span></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer position-relative text-white overflow-hidden">
+
+        <div class="footer-angled-shape"></div>
+    
+        <div class="container position-relative z-2 py-5">
+            <div class="row gy-4 gx-lg-5">
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-inline-block mt-5">
+                        <img src="images/cargo-pulse-logo.png" alt="Cargo Pulse" class="img-fluid">
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 fs-6 roboto-700">Contact Us</h5>
+    
+                    <div class="footer-map-location d-flex align-items-start gap-2 mb-3 text-light opacity-75">
+                        <span class="material-symbols-outlined fs-5 flex-shrink-0 mt-1">location_on</span>
+                        <span class="small roboto-400">Wisconsin Ave, Suite 700<br>Chevy Chase, Maryland
+                            20815</span>
+                    </div>
+    
+                    <div class="footer-mail d-flex align-items-center gap-2 text-light opacity-75">
+                        <span class="material-symbols-outlined flex-shrink-0">mail</span>
+                        <a href="mailto:support@figma.com" class="text-light text-decoration-none small roboto-400">support@figma.com
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <ul class="list-unstyled footer-links mb-0 small d-flex flex-column gap-2">
+                        <li><a href="about.html" class="text-light text-decoration-none opacity-75 roboto-400">About</a></li>
+                        <li><a href="features.html" class="text-light text-decoration-none opacity-75 roboto-400">Features</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Pricing</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Gallery</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none opacity-75 roboto-400">Team</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 roboto-700">Subscribe</h5>
+    
+                    <form class="mb-4">
+                        <div class="mb-2">
+                            <input type="email" class="form-control bg-white border-0 py-2"
+                                style="color: rgba(154, 158, 165, 1)" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 py-2 roboto-400 border-0"
+                            style="background-color: #EF3B23;">
+                            Subscribe
+                        </button>
+                    </form>
+    
+                    <h6 class="follow-us-social-media mb-2 small opacity-75 roboto-700">Follow us</h6>
+                    <div class="d-flex gap-2 social-icons">
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-send-plane-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#"
+                            class="social-btn d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none">
+                            <i class="ri-figma-line"></i>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-2 container-fluid py-3 border-top border-secondary border-opacity-25">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    
+                <div class="copyright-text text-light opacity-75 small roboto-300">
+                    © 2026 All Rights Reserved | Powered by Digitech Infra
+                </div>
+    
+                <div
+                    class="footer-bottom-links d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 roboto-400">
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Privacy
+                        Policy</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Terms of
+                        Use</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Sales and
+                        Refunds</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Legal</a>
+                    <a href="#" class="footer-link text-light opacity-75 text-decoration-none small">Site Map</a>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--

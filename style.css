@@ -6,7 +6,28 @@
 
 html {
     scroll-behavior: smooth;
+    /* scrollbar-width: ; */
+    scrollbar-color: rgba(184, 17, 0, 1) #f1f5f9;
 }
+/* Chrome, Edge, Safari, Brave ke liye Global Page Scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Vertical scrollbar ki width */
+    height: 8px; /* Horizontal scrollbar ki height */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9; /* Scrollbar track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(184, 17, 0, 1); /* Primary Red Color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(184, 17, 0, 1); /* Darker red on hover */
+}
+
 
 .outline *{
     border: 1px solid black;
@@ -17,40 +38,40 @@ html {
 /* Geist Fonts */
 .geist-400{
     font-family: "Geist", sans-serif;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-style: normal;
 }
 .geist-500{
     font-family: "Geist", sans-serif;
-    font-weight: 500;
+    font-weight: 500 !important;
     font-style: normal;
 }
 .geist-600{
     font-family: "Geist", sans-serif;
-    font-weight: 600;
+    font-weight: 600 !important;
     font-style: normal;
 }
 .geist-700{
     font-family: "Geist", sans-serif;
-    font-weight: 700;
+    font-weight: 700 !important;
     font-style: normal;
 }
 
 /* Roboto-Fonts */
 .roboto-300{
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 300 !important;
     font-style: normal;
 }
 
 .roboto-400{
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-style: normal;
 }
 .roboto-700{
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 700 !important;
     font-style: normal;
 }
 
@@ -150,6 +171,8 @@ html {
 }
 
 /*----------------- Main Navbar End ---------------*/
+
+/* ------------------Home Page ---------------- */
 
 /* ------------------Home Page Hero Content---------------- */
  /* Badge Styling */
@@ -293,10 +316,6 @@ html {
     transition: background-color 0.2s ease;
 }
 
-.cfs-tag-item:hover {
-    background-color: #F3F4F6;
-}
-
 .tag-arrow {
     color: #EF3B23;
     font-weight: bold;
@@ -420,8 +439,9 @@ html {
     text-transform: uppercase;
 }
 
+/* ------------------Home Page End ---------------- */
 
-/* Base Footer Dark Background */
+/* ------------------Footer Section ---------------- */
 .main-footer {
     background-color: #31353B;
     padding-top: 4rem;
@@ -497,7 +517,7 @@ html {
         font-size: 0.775rem;
     }
 }
-/* -------------------------------------Home Page Ends ----------------------------------*/
+/* ------------------Footer Section End ---------------- */
 
 /* -------------------------------------Feature Page ----------------------------------*/
 
@@ -690,9 +710,6 @@ html {
     border-radius: 50px;
 }
 
-/* =========================================
-   FEATURE PAGE - EXCLUSIVE STATISTIC ROW
-========================================= */
 
 /* Parent Wrapper Scope */
 .features-page .statistic-row-section {
@@ -807,3 +824,701 @@ html {
     font-size: 13px;
     line-height: 1.3;
 }
+/* -------------------------------------Feature Page End ----------------------------------*/
+
+/* ----------------- Contact Page ----------------- */
+.contact-page .info-and-location .title{
+    font-size: clamp(2.1875rem, 1.9554rem + 1.1607vw, 3rem);
+    color: rgba(24, 28, 31, 1);
+    letter-spacing: -0.96px;
+}
+
+.contact-page .info-and-location .subtitle{
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    color: rgba(94, 94, 96, 1);
+    line-height: 24px;
+}
+
+/* Contact Info Card */
+.contact-info-card {
+    padding: 8px 0;
+}
+
+/* Round Light Icon Container */
+.contact-info-card .info-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background-color: #f1f5f9; /* Light grey-blue background */
+    border-radius: 50%;
+}
+
+.contact-info-card .info-icon-wrapper i {
+    color: #ef3b23; /* Primary Red Accent */
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Card Text Styling */
+.contact-info-card .info-title {
+    color: #181c1f;
+    font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    line-height: 1.2;
+}
+
+.contact-info-card .info-emails p,
+.contact-info-card .info-call p {
+    color: #686868;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-page .info-and-location h6{
+    font-size: 20px;
+    color: rgba(24, 28, 31, 1);
+}
+
+/* Global Offices Section Styling */
+.contact-page .global-offices-title {
+    color: #181c1f;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.contact-page .office-icon {
+    color: #4a5568;
+    font-size: 15px;
+}
+
+.contact-page .office-city {
+    color: rgba(24, 28, 31, 1);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-page .office-address {
+    color: rgba(94, 94, 96, 1);
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 19px;
+}
+
+/* Contact Form */
+.contact-page .contact-form{
+    border: 1px solid rgba(243, 244, 246, 1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 18px;
+}
+
+.contact-form .title{
+    font-size: 32px;
+    color: rgba(24, 28, 31, 1);
+    letter-spacing: -0.96px;
+    line-height: 40px;
+} 
+
+
+/* Custom Form Label */
+.contact-form .custom-form-label {
+    color: #5c403b; /* Dark brown / warm brownish tint */
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Custom Input Field */
+.contact-form .custom-form-input {
+    border: 1px solid rgba(107, 114, 128, 1);
+    border-radius: 0px;
+    padding: 9px 12px;
+    font-size: 14px;
+    color: rgba(107, 114, 128, 1);
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form .custom-form-input::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form .custom-form-input:focus {
+    border-color: #ef3b23;
+    box-shadow: 0 0 0 3px rgba(239, 59, 35, 0.12);
+}
+/* Custom Form Select / Button Styling */
+.contact-form .custom-form-select {
+    border: 1px solid rgba(229, 231, 235, 1);
+    border-radius: 5px;
+    padding: 9px 16px;
+    font-size: 14px;
+    color: rgba(24, 28, 31, 1);
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Fix 1: Hover par border remove hone se rokna (Bootstrap btn default override) */
+.contact-form .custom-form-select:hover,
+.contact-form .custom-form-select:active,
+.contact-form .custom-form-select.show {
+    border-color: rgba(229, 231, 235, 1);
+    background-color: #ffffff;
+    color: rgba(24, 28, 31, 1);
+}
+
+.contact-form .custom-form-select:focus {
+    border-color: rgba(239, 59, 35, 1);
+    box-shadow: 0 0 0 3px rgba(239, 59, 35, 0.12);
+}
+
+/* Fix 2: Dropdown items hover & active red theme */
+.custom-dropdown .dropdown-item {
+    color: #181c1f;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.03s ease-in-out;
+}
+
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus,
+.custom-dropdown .dropdown-item:active,
+.custom-dropdown .dropdown-item.active {
+    background-color: rgba(239, 59, 35, 1);
+    color: #ffffff;
+}
+
+/* Textarea Custom Styling */
+.contact-form .custom-form-textarea {
+    border: 1px solid rgba(229, 231, 235, 1);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: rgba(24, 28, 31, 1);
+    background-color: #ffffff;
+    resize: none; /* Allows resizing only vertically */
+    min-height: 114px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form .custom-form-textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form .custom-form-textarea:focus {
+    border-color: #ef3b23;
+    box-shadow: 0 0 0 3px rgba(239, 59, 35, 0.12);
+    outline: none;
+}
+
+/* Hide Scrollbar Arrow Buttons (Up/Down Steppers) */
+.contact-form .custom-form-textarea::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Slim Red Scrollbar Styling */
+.contact-form .custom-form-textarea::-webkit-scrollbar {
+    width: 8px; /* Slightly wider so borders sit nicely inside */
+}
+
+/* Track ko textarea ke rounded corners ke andar constrain karne ke liye */
+.contact-form .custom-form-textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+    margin-top: 4px;   /* Top corner overflow fix */
+    margin-bottom: 4px;/* Bottom corner overflow fix */
+}
+
+/* Thumb Fix: Border clip se thumb textarea ki red border ke bahar nahi nikalta */
+.contact-form .custom-form-textarea::-webkit-scrollbar-thumb {
+    background-color: #ef3b23;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Acts as inner padding */
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+.contact-form .custom-form-textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #d32f2f;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+/* Google reCAPTCHA Responsive Scaling */
+.captcha-responsive-wrapper {
+    display: inline-block;
+}
+
+@media (max-width: 360px) {
+    .captcha-responsive-wrapper {
+        transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+/* Custom Submit Button */
+.contact-form .custom-submit-btn {
+    background-color: #ef3b23;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    /* padding: 12px 24px; */
+    font-size: 16px;
+    cursor: pointer; /* Explicit cursor pointer */
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form .custom-submit-btn:hover {
+    background-color: #d32f2f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact-form .custom-submit-btn:focus {
+    box-shadow: 0 0 0 3px rgba(239, 59, 35, 0.25);
+    outline: none;
+}
+
+.contact-form .privacy-policy-agreement{
+    color: rgba(94, 94, 96, 1);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.contact-form .privacy-policy-agreement span{
+    color: rgba(239, 59, 35, 1);
+}
+
+
+
+/* ----------------- About Page ----------------- */
+
+/* Hero Banner Wrapper */
+.about-hero-section {
+    background-color: #ffffff;
+    /* Isometric Image Right Side Par Position Aur Faded Background Gradient */
+    background-image: 
+        url(images/about-hero-section.jpg); /* Apni image path lagayein */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+/* Sub-heading Label */
+.about-hero-section .hero-label {
+    color: rgba(94, 94, 96, 1); 
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    line-height: 16px;
+}
+
+/* Title Styling */
+.about-hero-section .hero-title {
+    color: rgba(24, 28, 31, 1); 
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+/* Description Text */
+.about-hero-section .hero-description {
+    color: #4b5563; /* Medium Dark Grey */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Primary Red Button (Rounded Pill Shape) */
+.about-hero-section .cta-btn-primary {
+    background-color: #f03e2f; /* Bright Red */
+    color: #ffffff;
+    border-radius: 50px; /* Fully Rounded */
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(240, 62, 47, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.about-hero-section .cta-btn-primary:hover {
+    background-color: #d92d20;
+    color: #ffffff;
+}
+
+/* Secondary Outline Button (Rounded Pill Shape) */
+.about-hero-section .cta-btn-outline {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 50px; /* Fully Rounded */
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-hero-section .cta-btn-outline:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+    color: #111827;
+}
+
+.platform-overview-section .platform-image-section{
+    border: 1px solid rgba(223, 227, 231, 1);
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.platform-overview-section .platform-text-section h2{
+    color: rgba(24, 28, 31, 1);
+    font-size: 32px;
+    letter-spacing: -0.32;
+    line-height: 40px;
+}
+.platform-overview-section .platform-text-section p{
+    color: rgba(94, 94, 96, 1);
+    font-size: 16px; 
+    line-height: 26px;
+}
+
+.flexibility-features-section{
+    background-color: rgba(246, 250, 254, 1);
+}
+
+.flexibility-features-text h2{
+    color: rgba(24, 28, 31, 1);
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.32px;
+}
+
+/* Card Container Styling */
+.flexibility-features-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+/* Rounded Light Grey Circle for Icon */
+.flexibility-features-card .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background-color: #f1f5f9; /* Light greyish background */
+}
+
+/* Google Icon Style */
+.flexibility-features-card .icon-style {
+    color: #ef3b23; /* Red accent color */
+    font-size: 24px;
+}
+
+/* Card Text Typography */
+.flexibility-features-card .card-title {
+    color: #111827;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+}
+
+.flexibility-features-card .card-text {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* ----------------- About Page End----------------- */
+
+/* ----------------- Solutions Page ----------------- */
+
+.solutions-page .main-navbar{
+    background-color: rgba(246, 250, 254, 1);
+}
+
+.solutions-hero {
+    background-color: rgba(246, 250, 254, 1);
+}
+
+.solutions-hero-label {
+    color: rgba(184, 17, 0, 1);
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+
+.solutions-hero-title {
+    color: rgba(24, 28, 31, 1);
+    font-size: 52px;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+}
+
+.solutions-hero-title span {
+    color: rgba(184, 17, 0, 1);
+}
+
+.solutions-hero-description {
+    color: rgba(94, 94, 96, 1);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 560px;
+}
+
+
+/* HERO BUTTONS */
+
+
+.solutions-primary-btn {
+    background-color: rgba(184, 17, 0, 1);
+    color: #ffffff !important;
+    border: 1px solid rgba(184, 17, 0, 1);
+    border-radius: 50px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease-in-out;
+    font-size: 14px;
+}
+
+/* Arrow Icon Styling */
+.solutions-primary-btn .btn-arrow-icon {
+    font-size: 16px; /* Text size ke mutabiq adjust kiya hai */
+    transition: transform 0.25s ease-in-out;
+}
+
+.solutions-primary-btn:hover {
+    background-color: rgba(184, 17, 0, 1);
+    border-color: rgba(184, 17, 0, 1);
+    color: #ffffff !important;
+    box-shadow: 0px 6px 15px rgba(239, 59, 35, 0.25);
+}
+
+/* Hover par arrow slightly right slide hoga */
+.solutions-primary-btn:hover .btn-arrow-icon {
+    transform: translateX(3px);
+}
+
+.solutions-secondary-btn {
+    color: #181c1f !important;
+    border: 1px solid #4c4c4e;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    font-size: 14px;
+}
+
+.solutions-secondary-btn:hover {
+    background-color: #181c1f !important;
+    border-color: #181c1f;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 12px rgba(24, 28, 31, 0.15);
+}
+
+
+/* HERO IMAGE */
+
+.solutions-hero-image {
+    max-width: 540px;
+}
+
+
+/* =========================
+   SOLUTIONS OVERVIEW
+========================= */
+
+.solutions-overview {
+    /* background-color: rgba(246, 250, 254, 1); */
+}
+
+.solutions-overview-title {
+    color: rgba(24, 28, 31, 1);
+    font-size: 32px;
+}
+
+.solutions-overview-description {
+    color: rgba(94, 94, 96, 1);
+    font-size: 14px;
+}
+
+
+/* SOLUTION CARDS */
+
+.solution-card {
+    min-height: 175px;
+    background-color: rgba(246, 250, 254, 1);
+}
+
+.solution-icon-box {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(184, 17, 0, 0.08);
+}
+
+.solution-icon {
+    color: rgba(184, 17, 0, 1);
+    font-size: 19px;
+    line-height: 1;
+
+    font-variation-settings:
+        "FILL" 1,
+        "wght" 500,
+        "GRAD" 0,
+        "opsz" 24;
+}
+
+.solution-card-title {
+    color: rgba(24, 28, 31, 1);
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.solution-card-description {
+    color: rgba(94, 94, 96, 1);
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+
+/* =========================
+   SOLUTION CTA
+========================= */
+
+.solution-cta {
+    background-color: rgba(246, 250, 254, 1);
+}
+
+.solution-cta-box {
+    /* Base background mixed with subtle top-center radial gradient glow */
+    background-image: radial-gradient(
+        circle at 50% 0%, 
+        rgba(222, 46, 24, 0.12) 0%, 
+        rgba(222, 46, 24, 0) 70%
+    );
+    background-color: rgba(235, 240, 245, 1);
+    border: 1px solid rgba(220, 226, 232, 1);
+}
+
+.solution-cta-title {
+    color: rgba(24, 28, 31, 1);
+    font-size: 30px;
+}
+
+.solution-cta-description {
+    color: rgba(94, 94, 96, 1);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 540px;
+}
+
+.solutions-secondary-btn {
+    background-color: #fff;
+    color: rgba(24, 28, 31, 1) !important;
+    border: 1px solid #d9dee3;
+}
+
+.solutions-secondary-btn:hover {
+    background-color: #181c1f !important;
+    border-color: #181c1f;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 12px rgba(24, 28, 31, 0.15);
+}
+
+/* =========================
+   TABLET
+   Only where Bootstrap isn't
+   controlling typography
+========================= */
+
+@media (max-width: 991.98px) {
+
+    .solutions-hero-title {
+        font-size: 42px;
+    }
+
+    .solutions-hero-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .solutions-overview-title {
+        font-size: 28px;
+    }
+
+    .solution-cta-title {
+        font-size: 26px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+    /* HERO */
+
+    .solutions-hero-label {
+        font-size: 11px;
+    }
+
+    .solutions-hero-title {
+        font-size: 30px;
+        line-height: 1.08;
+        letter-spacing: -0.7px;
+    }
+
+    .solutions-hero-description {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .solutions-primary-btn,
+    .solutions-secondary-btn {
+        width: 100%;
+        height: 42px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .solutions-hero-image {
+        max-width: 100%;
+    }
+
+
+    /* OVERVIEW */
+
+    .solutions-overview-title {
+        font-size: 25px;
+    }
+
+    .solutions-overview-description {
+        font-size: 12px;
+    }
+
+    .solution-card {
+        min-height: auto;
+    }
+
+    .solution-card-title {
+        font-size: 16px;
+    }
+
+    .solution-card-description {
+        font-size: 12px;
+    }
+
+
+    /* CTA */
+
+    .solution-cta-title {
+        font-size: 23px;
+        line-height: 1.2;
+    }
+
+    .solution-cta-description {
+        font-size: 12px;
+    }
+
+    .solution-cta-primary,
+    .solution-cta-secondary {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ----------------- Solutions Page End----------------- */

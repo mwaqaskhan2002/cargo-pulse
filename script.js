@@ -14,3 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     heroImages[currentIndex].classList.add("active");
   }, delayDuration);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Dropdown items ke clicks listener
+  document
+    .querySelectorAll(".custom-dropdown .dropdown-item")
+    .forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        e.preventDefault(); // Default link navigation ko rokta hai
+
+        // Selected text nikaal kar button ke span mein set karna
+        const selectedValue = this.textContent;
+        const dropdown = this.closest(".custom-dropdown");
+        const labelSpan = dropdown.querySelector(".selected-text");
+
+        labelSpan.textContent = selectedValue;
+      });
+    });
+});
