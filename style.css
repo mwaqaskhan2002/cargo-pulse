@@ -517,6 +517,17 @@ html {
         font-size: 0.775rem;
     }
 }
+
+.copyright-text a.hover-opacity {
+    transition: opacity 0.2s ease-in-out;
+    color: rgba(239, 59, 35, 1);
+}
+
+.copyright-text a.hover-opacity:hover {
+    opacity: 0.8;
+    text-decoration: underline !important;
+}
+
 /* ------------------Footer Section End ---------------- */
 
 /* -------------------------------------Feature Page ----------------------------------*/
