@@ -35,12 +35,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-window.onload = function () {
-  const container = document.getElementById("recaptcha-container");
-  const key = window.CONFIG?.RECAPTCHA_SITE_KEY;
-
-  // Agar container ya key nahi milti toh aage mat barho
-  if (!container || !key) return;
-
-  grecaptcha.render("recaptcha-container", { sitekey: key });
-};
